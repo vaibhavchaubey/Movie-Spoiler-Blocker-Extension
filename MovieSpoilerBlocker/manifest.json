@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Movie Spoiler Blocker",
+  "version": "1.0",
+  "description": "Block spoilers in movie reviews.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}

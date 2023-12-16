@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Spoiler Blocker</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    #toggleButton {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 15px 0;
+      font-size: 16px;
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #toggleButton:hover {
+      background-color: #27ae60;
+    }
+
+    #status {
+      text-align: center;
+      color: #555;
+    }
+
+    .spoiler-message {
+      background-color: #ecf0f1;
+      padding: 15px;
+      border-radius: 15px;
+      margin-top: 15px;
+      text-align: center;
+      color: #e74c3c;
+    }
+
+    .spoiler-text {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .disclaimer-text {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movie Spoiler Blocker</h1>
+  <button id="toggleButton">Toggle Spoiler Blocker</button>
+  <p id="status">Spoiler Blocker is ON</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
