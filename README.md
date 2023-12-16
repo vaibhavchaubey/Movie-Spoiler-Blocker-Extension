@@ -1,6 +1,6 @@
 # Movie Spoiler Blocker Chrome Extension
 
-![Movie Spoiler Blocker Logo](https://github.com/vaibhavchaubey/MovieSpoilerBlocker/raw/main/icon.png)
+![Movie Spoiler Blocker Logo](https://github.com/vaibhavchaubey/Movie-Spoiler-Blocker-Extension/blob/main/MovieSpoilerBlocker/icon.png)
 
 
 ## Overview
