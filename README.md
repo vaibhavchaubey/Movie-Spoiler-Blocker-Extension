@@ -1,15 +1,20 @@
-# Movie Spoiler Blocker Chrome Extension
-
-<!-- ![Movie Spoiler Blocker Logo](https://github.com/vaibhavchaubey/Movie-Spoiler-Blocker-Extension/blob/main/MovieSpoilerBlocker/icon.png) -->
-
+# Movie Spoiler-Shield Chrome Extension
 
 ## Overview
 
-The Movie Spoiler Blocker is a Chrome extension designed to enhance your movie-watching experience by preventing spoilers in online reviews. With a user-friendly interface and customizable settings, this extension allows you to toggle spoiler blocking on or off with a single click.
+The Movie Spoiler-Shield is a comprehensive Chrome extension designed to elevate your movie-watching experience by harnessing the power of the BERT pre-trained model for spoiler detection in movie reviews. With a user-friendly interface, customizable settings, and a seamless integration of machine learning and web scraping, this extension ensures users are shielded from plot revelations, allowing them to enjoy reviews without the fear of spoilers.
 
 ## Features
 
-- **Spoiler Detection:** The extension scans movie reviews for potential spoilers, providing a seamless browsing experience without revealing key plot details.
+- **Spoiler Detection with BERT:** Utilizes a BERT pre-trained model to accurately detect potential spoilers in movie reviews, providing advanced spoiler protection.
+
+- **Web Scraping Integration:** The JavaScript code performs web scraping to extract relevant data from movie review websites, allowing the extension to analyze and process the content.
+
+- **Flask API Backend:** Hosts the BERT model using Flask, creating a robust backend system for handling predictions based on the content extracted from movie reviews.
+
+- **Dynamic Content Handling:** The extension's JavaScript dynamically interacts with the Flask API to obtain real-time predictions, ensuring that the spoiler detection is consistently up-to-date.
+
+- **Automatic Spoiler Blocking:** If the BERT model predicts the presence of spoilers, the extension automatically hides the corresponding review content, preventing users from accidentally encountering plot details.
 
 - **Toggle Functionality:** Easily enable or disable the spoiler blocker with the click of a button, giving you control over when to use the extension.
 
@@ -27,17 +32,21 @@ The Movie Spoiler Blocker is a Chrome extension designed to enhance your movie-w
 
 4. Click on "Load unpacked" and select the folder containing the extension files.
 
-5. The Movie Spoiler Blocker icon should now appear in your Chrome toolbar.
+5. The Movie Spoiler-Shield icon should now appear in your Chrome toolbar.
 
 ## Usage
 
-1. Click on the Movie Spoiler Blocker icon in the Chrome toolbar to open the popup.
+1. Click on the Movie Spoiler-Shield icon in the Chrome toolbar to open the popup.
 
 2. Use the "Toggle Spoiler Blocker" button to enable or disable the spoiler blocker.
 
-3. Enjoy reading movie reviews without worrying about spoilers!
+3. Enjoy reading movie reviews without worrying about spoilers! If the extension detects potential spoilers, it automatically hides the relevant content.
 
 ## Customization
+
+- **Adjusting Thresholds:** Explore the Flask API configuration to fine-tune the spoiler detection thresholds based on user preferences.
+
+- **Model Updates:** Periodically update the BERT pre-trained model to incorporate the latest advancements in spoiler detection.
 
 - **Spoiler Detection Logic:** Customize the spoiler detection logic in the `isSpoiler` function within the `contentScript.js` file to suit your preferences.
 
@@ -50,3 +59,11 @@ We welcome contributions! If you find a bug or have an idea for improvement, ple
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+We would like to express our gratitude to the creators of the BERT pre-trained model and the Flask framework for making this project possible. Special thanks to the open-source community for their continuous support and contributions.
+
+---
+
+Feel free to adjust the headings, formatting, and content to suit your preferences. This extended version provides a more comprehensive overview of the Movie Spoiler-Shield Chrome Extension, covering both the initial details and the additional information about the BERT model integration.

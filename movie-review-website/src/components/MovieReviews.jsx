@@ -5,12 +5,14 @@ import TitleCard from './TitleCard';
 const MovieReviews = ({ reviews }) => {
   return (
     <div className="container mx-auto">
-      <TitleCard />
+      <div id="movie-reviews"> {/* Add the id here */}
+        <TitleCard />
 
-      <div className="reviews">
-        {reviews.map((review, index) => (
-          <ReviewCard key={index} {...review} />
-        ))}
+        <div className="reviews">
+          {reviews.map((review, index) => (
+            <ReviewCard key={index} {...review} />
+          ))}
+        </div>
       </div>
     </div>
   );
